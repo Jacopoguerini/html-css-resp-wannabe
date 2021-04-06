@@ -73,7 +73,6 @@ img {
 }
 
 @media screen and (max-width: 420px) {
-  
   #lezioni > .row .left,
   #lezioni > .row .right,
   #steps > .row .left,
@@ -84,7 +83,17 @@ img {
   }
 
   .row {
+    width: 100%;
     margin: 0;
+  }
+  .row > * {
+    float: none;
+  }
+
+  .container:nth-child(odd) {
     background-color: #f2f2cd;
+  }
+  .container:nth-child(even) {
+    background-color: white;
   }
 }
