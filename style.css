@@ -73,10 +73,20 @@ img {
 }
 
 @media screen and (max-width: 420px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 5px;
+  }
 
   .row {
     width: 100%;
     margin: 0;
+    padding-top: 5px;
   }
   
   #lezioni > .row > .left,
@@ -89,6 +99,8 @@ img {
   #why > .row > .third {
     width: 100%;
     float: none;
+    margin: 0;
+    margin-top: 10px;
   }
 
   .container:nth-child(odd) {
@@ -96,5 +108,13 @@ img {
   }
   .container:nth-child(even) {
     background-color: white;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .row img {
+    height: 100px;
   }
 }
